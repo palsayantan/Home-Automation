@@ -1,4 +1,3 @@
-//need some kind of ping method so that our app know when the device gone offline
 
 #include <ESP8266WiFi.h>
 #include <DNSServer.h>
@@ -36,9 +35,6 @@ void setup() {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 }
-
-//  link for ESP to hit
-//  https://customprojects.000webhostapp.com/Home_Automation/[ID]/state
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void wifi() {
