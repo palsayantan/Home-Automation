@@ -12,8 +12,8 @@ char ch;
 
 void setup ()
 {
-  mySerial.begin(115200);
-  Serial.begin(115200);
+  mySerial.begin(9600);
+  Serial.begin(9600);
 
   pinMode(relay1, OUTPUT);
   pinMode(relay2, OUTPUT);
