@@ -19,7 +19,7 @@ void configModeCallback (WiFiManager *myWiFiManager) {
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   WiFiManager wifiManager;                                                  //WiFiManager
   //set callback that gets called when connecting to previous WiFi fails, and enters Access Point mode
   wifiManager.setAPCallback(configModeCallback);
