@@ -1,4 +1,3 @@
-//need some kind of ping method so that our app know when the device gone offline
 
 #include <ESP8266WiFi.h>
 #include <DNSServer.h>
@@ -7,7 +6,7 @@
 #include <Adafruit_NeoPixel.h>
 #include <ESP8266HTTPClient.h>
 
-String ID = "Sayantan";            //Enter Product ID
+String ID = "";            //Enter Product ID
 int req;                  //Handle Web Request
 
 #define PIN        5         //RGB LED Pin
@@ -23,7 +22,7 @@ void configModeCallback (WiFiManager *myWiFiManager) {
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pixels.begin();
   pixels.setPixelColor(0, pixels.Color(150, 0, 150));
   pixels.show();
@@ -43,9 +42,6 @@ void setup() {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 }
-
-//  link for ESP to hit
-//  https://customprojects.000webhostapp.com/Home_Automation/[ID]/state
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void wifi() {
