@@ -8,3 +8,7 @@ Some of the projects that can be made using this Module are includes--
 2. WiFi Home Automation
 3. Google Assistant Home Automation
 4. As a motor driver in RC car
+
+ If you like my work and want to support my future projects consider purchasing this product from my tindie store. It'd be really helpful.
+
+https://www.tindie.com/products/18130/
